@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dobrymechanik</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content container">
+        <div class="header__brand">
+          <a href="/" class="header__logo-link">
+            <img
+              src="./img/logo.png"
+              alt="DobryMechanik"
+              width="147"
+              height="40"
+              class="header__logo"
+            />
+          </a>
+
+          <div class="header__subtext text text--grey visible-md visible-lg">
+            Twój wiarygodny i zaufany doradca motoryzacyjny
+          </div>
+        </div>
+
+        <div class="header__right">
+          <button class="button button--transparent">
+            Dla mechaników
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home Template -->
+    <script id="home-template" type="text/x-handlebars-template">
+      <h1>
+          Znaleźliśmy dla Ciebie 13 warsztatów w Warszawie
+      </h1>
+      <p class="text text--grey my-15">
+          Jeśli chcesz dowiedzieć się, w jakiej odległości od Ciebie znajdują się warsztaty, wpisz swój adres w wyszukiwarkę. Przy
+          każdym warsztacie wyświetlimy odległość od Twojego miejsca zamieszkania.
+      </p>
+      <input type="text" class="text-input text-input--search" placeholder="Wpisz swój adres"/>
+      <div class="google-map">
+      </div>
+      <div class="workshop">
+        <div class="workshop__item">
+            <div class="workshop__item-image">
+
+            </div>
+            <div class="workshop__item-info">
+                <div class="workshop__item-title">
+                    Mechanic's Garage Centrum
+                </div>
+                <div class="workshop__item-text">
+                    3 km od Ciebie <span class="address">Tarnobrzeska 4, Starołęka, Warszawa</span>
+                </div>
+                <div class="workshop__item-more">
+                    Więcej o warsztacie
+                </div>
+            </div>
+            <div class="workshop__item-price">
+                <span class="text--grey">1500zł</span>
+                <span class="text--red">1000zł</span>
+                <span class="text--info">(taniej o 400 zł niż w ASO)</span>
+            </div>
+            <a href="/first" class="button button--primary">
+                Umów wizytę
+            </a>
+        </div>
+      </div>
+    </script>
+
+    <!-- First view Template -->
+    <script id="first-template" type="text/x-handlebars-template">
+      <h3>Umówienie wizyty - krok 1 z 4</h3>
+      <h1>
+          Umów wizytę i zapłać mniej
+      </h1>
+    </script>
+    <!-- Second view Template -->
+    <script id="second-template" type="text/x-handlebars-template">
+      <h3>Umówienie wizyty - krok 2 z 4</h3>
+      <h1>
+          Wybierz termin wizyty
+      </h1>
+    </script>
+
+    <!-- Third view Template -->
+    <script id="third-template" type="text/x-handlebars-template">
+      <h3>Umówienie wizyty - krok 3 z 4</h3>
+      <h1>
+          Podaj dane kontaktowe
+      </h1>
+    </script>
+    <div id="app"></div>
+    
+    <script src="scripts/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/handlebars/dist/handlebars.min.js"></script>
+    <script src="scripts/vanilla-router/dist/vanilla-router.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

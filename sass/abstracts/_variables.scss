@@ -1,0 +1,15 @@
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: ( 'tablet': 768px, 'desktop': 968px, ) !default;
+
+$tablet: 768px;
+$desktop: 968px;
+
+//colors
+$brandblue: #176AE6;
+$blue: #0D57C3;
+$lightgrey: #DCE0E6;
+$hrgrey: #E3E3E3;
+$darkgrey: #6B707D;
+$red: #E74C3C;

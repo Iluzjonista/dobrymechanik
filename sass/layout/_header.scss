@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+
+  .header__logo {
+    margin: 18px 0;
+  }
+
+  .header__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 1px solid $lightgrey;
+    align-items: center;
+
+    @media only screen and (min-width: $desktop) {
+      justify-content: space-between;
+    }
+  }
+
+  .header__brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (min-width: desktop) {
+      justify-content: flex-start;
+    }
+  }
+  @media only screen and (min-width: desktop) {
+    .header__subtext {
+      display: block;
+      margin-left: 30px;
+      padding: 8px 0 8px 30px;
+      border-left: 1px solid $lightgrey;
+    }
+
+    .header__right {
+      display: block;
+    }
+  }
+}
