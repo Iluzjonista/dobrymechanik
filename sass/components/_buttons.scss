@@ -1,18 +1,22 @@
 .button {
-    border: none;
-    background: none;
-    padding: 8px 10px;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    width: -moz-available; /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    width: fill-available;
+  border: none;
+  background: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  width: -moz-available; /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
 
-    &__primary{
-        padding: 10px;
-        background: $brandblue;
-        color:$white;
-    }
+  &__primary {
+    padding: 10px;
+    background: $brandblue;
+    color: $white;
+  }
+  &__top {
+    border: 1px solid $lightblack;
+    color: $lightblack;
+  }
 }

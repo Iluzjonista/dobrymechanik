@@ -58,7 +58,7 @@
         padding: 20px 0px;
         display: flex;
         justify-content: flex-end;
-        &::before {}
+        content: url(../../img/map.jpg);
     }
     .workshop {
         &__item {

@@ -2,10 +2,16 @@
   width: 100%;
 
   &__logo {
+    @media only screen and (min-width: $desktop) {
+      margin:0;
+    }
     margin: 18px 0;
   }
 
   &__content {
+    @media only screen and (min-width: $desktop) {
+      padding:20px;
+    }
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -33,6 +39,7 @@
       margin-left: 30px;
       padding: 8px 0 8px 30px;
       border-left: 1px solid $lightgrey;
+      color:$darkgrey;
     }
   }
   &__right {
