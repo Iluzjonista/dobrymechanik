@@ -1,0 +1,141 @@
+.second {
+  padding: 30px 20px;
+  @media only screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    .container {
+      &:first-of-type {
+        padding-left: 9%;
+        padding-right: 5%;
+      }
+      &:nth-of-type(2) {
+        padding-right: 9%;
+      }
+      &--frame {
+        padding: 15px 15px 0 15px;
+        border: 1px solid $lightgrey;
+        box-shadow: inset 0 -2px 0 0 $lightgrey;
+      }
+    }
+  }
+  &__info {
+    padding-top: 30px;
+    &-step {
+      color: $darkgrey;
+      font-weight: 500;
+    }
+    &-title {
+      color: $lightblack;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      padding: 10px 0;
+    }
+    &-text {
+      color: $darkgrey;
+      padding-bottom: 30px;
+    }
+  }
+  &__about {
+    &-workshop {
+      border-bottom: 1px solid $hrgrey;
+      padding-bottom: 20px;
+      @media only screen and (min-width: $desktop) {
+        border-top: 0px;
+      }
+      &--title {
+        font-size: 12px;
+        line-height: 16px;
+        color: $darkgrey;
+        text-transform: uppercase;
+      }
+      &--name {
+        flex: 0 0 75%;
+        color: $lightblack;
+      }
+      &--change {
+        text-align: end;
+        width: 100%;
+      }
+    }
+    &-car {
+      border-bottom: 1px solid $hrgrey;
+      padding: 20px 0;
+      &--title {
+        font-size: 12px;
+        line-height: 16px;
+        color: $darkgrey;
+        text-transform: uppercase;
+      }
+      &--name {
+        color: $lightblack;
+        flex: 0 0 75%;
+      }
+      &--change {
+        text-align: end;
+        width: 100%;
+      }
+    }
+    &-services {
+      border-bottom: 1px solid $hrgrey;
+      padding: 20px 0;
+      @media only screen and (min-width: $desktop) {
+        padding: 20px 0 0 0;
+      }
+      &--title {
+        font-size: 12px;
+        line-height: 16px;
+        color: $darkgrey;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+      }
+      &--name {
+        color: $lightblack;
+        flex: 0 0 33%;
+        padding-bottom: 10px;
+      }
+      &--change {
+        color: $blue;
+        width: 100%;
+        padding-bottom: 20px;
+        text-align: end;
+      }
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      &--row {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+  .button {
+    margin-top: 30px;
+  }
+  &__radio {
+    &-input {
+        background-color: #F0F1F5;
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 10px;
+      margin:10px 0;
+      &-text {
+        display: flex;
+        flex-direction: column;
+        &--title {
+        }
+        &--par {
+          color: $darkgrey;
+        }
+      }
+      
+    }
+  }
+}
