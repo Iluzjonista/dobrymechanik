@@ -5,6 +5,7 @@ $breakpoints: ( 'tablet': 768px, 'desktop': 968px, ) !default;
 
 $tablet: 768px;
 $desktop: 968px;
+$max: 1300px;
 
 //colors
 $brandblue: #176AE6;
@@ -16,3 +17,6 @@ $red: #E74C3C;
 $lightblack: #242629;
 $inputbg: #F0F1F5;
 $white:#fff;
+$greybg: #F7F8FA;
+$lightgreen:#DEF3E7;
+$green: #00B286;

@@ -1,100 +1,126 @@
-.home {
-  padding: 30px 20px 10px 20px;
-  display: flex;
-  flex-direction: column;
-  &__intro {
-    h1 {
-      font-size: 30px;
-      line-height: 36px;
-      font-weight: 700;
-      color: $lightblack;
+@font-face {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style : normal;
+           src : url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/webfonts/fa-regular-400.eot");
+           src : url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/webfonts/fa-regular-400.eot") format("embedded-opentype"),
+                 url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/webfonts/fa-regular-400.woff2") format("woff2"),
+                 url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/webfonts/fa-regular-400.woff") format("woff"),
+                 url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/webfonts/fa-regular-400.ttf") format("truetype"),
+                 url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/webfonts/fa-regular-400.svg") format("svg");
     }
-    &-text--grey {
-      color: $darkgrey;
-    }
-    .text-input {
-      padding: 10px 8px;
-      width: 100%;
-      width: -moz-available; /* WebKit-based browsers will ignore this. */
-      width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-      width: fill-available;
-      background-color: $inputbg;
-      border: none;
-      &--search {
-      }
-    }
-  }
-  .google-map {
-    color: $blue;
-    padding: 20px 0px;
-    display: flex;
-    justify-content: flex-end;
-    &::before {
-      font-family: FontAwesome;
-      content: "\f3c5";
-    }
-  }
-  .workshop {
-    &__item {
-      padding: 20px 0px;
-      display: flex;
-      flex-direction: row;
-      border-bottom: 1px solid $hrgrey;
-      &-image {
-        padding-right: 10px;
-        object-fit: cover;
-        width: 80px;
-        height: 80px;
-      }
-      &-info {
-        display: flex;
-        flex-direction: column;
 
-        font-weight: 400;
-        font-size: 14px;
-      }
-      &-title {
-        font-weight: 500;
-        color: $lightblack;
-      }
-      &-text {
-        font-weight: 500;
-        color: $lightblack;
-        .address {
-          color: $darkgrey;
+
+.map:before {
+    font-family: FontAwesome;
+    content: "\f041"
+}
+
+.star:before {
+    font-family: FontAwesome;
+    content: "\f005 \f005 \f005 \f005"
+}
+
+.starw:before {
+    font-family: FontAwesome;
+    content: "\f005"
+}
+
+.home {
+    padding: 30px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    &__intro {
+        h1 {
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 700;
+            color: $lightblack;
         }
-      }
-      &-star {
-        color: $lightblack;
-      }
-      &-more {
-        color: $blue;
-      }
-      &-price {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 5px 0 15px 0px;
-        .text {
-          &-grey {
-            font-size: 12px;
-            line-height: 16px;
+        &-text--grey {
             color: $darkgrey;
-            text-decoration: line-through;
-          }
-          &-red {
-            font-size: 20px;
-            line-height: 30px;
-            font-weight: 500;
-            color: $red;
-          }
-          &-info {
-            font-size: 12px;
-            line-height: 16px;
-            color: $red;
-          }
         }
-      }
+        .text-input {
+            padding: 10px 8px;
+            width: 100%;
+            width: -moz-available;
+            /* WebKit-based browsers will ignore this. */
+            width: -webkit-fill-available;
+            /* Mozilla-based browsers will ignore this. */
+            width: fill-available;
+            background-color: $inputbg;
+            border: none;
+            &--search {}
+        }
     }
-  }
+    .google-map {
+        color: $blue;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: flex-end;
+        &::before {}
+    }
+    .workshop {
+        &__item {
+            padding: 20px 0px;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid $hrgrey;
+            justify-content: center;
+            &-image {
+                padding-right: 10px;
+                object-fit: cover;
+                width: 80px;
+                height: 80px;
+            }
+            &-info {
+                display: flex;
+                flex-direction: column;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            &-title {
+                font-weight: 500;
+                color: $lightblack;
+            }
+            &-text {
+                font-weight: 500;
+                color: $lightblack;
+                .address {
+                    color: $darkgrey;
+                }
+            }
+            &-star {
+                color: $lightblack;
+            }
+            &-more {
+                color: $blue;
+            }
+            &-price {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding: 5px 0 15px 0px;
+                .text {
+                    &-grey {
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: $darkgrey;
+                        text-decoration: line-through;
+                    }
+                    &-red {
+                        font-size: 20px;
+                        line-height: 30px;
+                        font-weight: 500;
+                        color: $red;
+                    }
+                    &-info {
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,6 +1,133 @@
 .first {
-  .progress {
-    width: 25%;
-    border-top: 3px solid $brandblue;
+  padding: 30px 20px;
+  &__info {
+    &-step {
+      color: $darkgrey;
+      font-weight: 500;
+    }
+    &-title {
+      color: $lightblack;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      padding: 10px 0;
+    }
+    &-text {
+      color: $darkgrey;
+      padding-bottom: 30px;
+    }
+  }
+  &__about {
+    &-workshop {
+      border-top: 1px solid $hrgrey;
+      padding: 20px 0;
+      &--title {
+        font-size: 12px;
+        line-height: 16px;
+        color: $darkgrey;
+        text-transform: uppercase;
+      }
+      &--name {
+        flex: 0 0 75%;
+        color: $lightblack;
+      }
+      &--change {
+        text-align: end;
+        width: 100%;
+      }
+    }
+    &-car {
+      border-top: 1px solid $hrgrey;
+      padding: 20px 0;
+      &--title {
+        font-size: 12px;
+        line-height: 16px;
+        color: $darkgrey;
+        text-transform: uppercase;
+      }
+      &--name {
+        color: $lightblack;
+        flex: 0 0 75%;
+      }
+      &--change {
+        text-align: end;
+        width: 100%;
+      }
+    }
+    &-services {
+      border-top: 1px solid $hrgrey;
+      padding: 20px 0;
+      &--title {
+        font-size: 12px;
+        line-height: 16px;
+        color: $darkgrey;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+      }
+      &--name {
+        color: $lightblack;
+        flex: 0 0 33%;
+        padding-bottom: 10px;
+      }
+      &--change {
+        color: $blue;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+      &--oldprice {
+        text-decoration: line-through;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      &--newprice {
+        font-weight: 500;
+        color: $red;
+      }
+      &--saves {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        color: $red;
+        padding: 40px 0 0 0;
+        text-align: end;
+      }
+      &--summary {
+        padding: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        background-color: $greybg;
+      }
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      &--row {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+  &__promotion {
+    border-bottom: 2px solid $green;
+    font-weight: 500;
+    &-row {
+        background-color: $lightgreen;
+      display: flex;
+      flex-direction: row;
+      max-width: 100%;
+      justify-content: space-between;
+      padding: 20px;
+      &--image {
+        padding-right: 20px;
+        object-fit: contain;
+      }
+    }
+  }
+  .button{
+    margin-top:30px;
+
   }
 }
