@@ -7,8 +7,14 @@
 
   @media only screen and (min-width: $desktop) {
     .container {
-      padding: 0px 10%;
-      &--column {
+      &:first-of-type {
+        padding-left: 9%;
+        padding-right:5%;
+      }
+      &:nth-of-type(2) {
+        padding-right: 9%;
+      }
+      &--frame {
         padding: 15px 15px 0 15px;
         border: 1px solid $lightgrey;
         box-shadow: inset 0 -2px 0 0 $lightgrey;
@@ -36,6 +42,9 @@
     &-workshop {
       border-top: 1px solid $hrgrey;
       padding: 20px 0;
+      @media only screen and (min-width: $desktop) {
+        border-top: 0px;
+      }
       &--title {
         font-size: 12px;
         line-height: 16px;
@@ -73,7 +82,7 @@
       border-top: 1px solid $hrgrey;
       padding: 20px 0;
       @media only screen and (min-width: $desktop) {
-      padding: 20px 0 0 0;
+        padding: 20px 0 0 0;
       }
       &--title {
         font-size: 12px;
@@ -116,10 +125,9 @@
         background-color: $greybg;
 
         @media only screen and (min-width: $desktop) {
-          
-        padding: 15px;
-        margin-left: -15px;
-        margin-right: -15px;
+          padding: 15px;
+          margin-left: -15px;
+          margin-right: -15px;
         }
       }
     }
